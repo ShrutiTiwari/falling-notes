@@ -16,6 +16,7 @@ import { hoshwalonkoMidiData } from './hosh-walon-ko';
 import { tumhihoMidiData } from './tum-hi-ho';
 import { raagyamanMidiData } from './raag-yaman';
 import { eyeofthetigerMidiData } from './eye-of-the-tiger';
+import { liftMeUpMidiData } from './lift-me-up';
 
 export interface MidiCollection {
   id: string;
@@ -137,6 +138,15 @@ export const midiCollection: MidiCollection[] = [
     duration: '1:01',
     scale: 'G Major',
     data: raagyamanMidiData
+  },
+  {
+    id: 'lift-me-up',
+    title: 'Lift Me Up',
+    composer: "Rihanna / arr. L'Estrange",
+    difficulty: 'Easy',
+    duration: '0:44',
+    scale: 'G Major',
+    data: liftMeUpMidiData
   },
   {
     id: 'twinkle',
