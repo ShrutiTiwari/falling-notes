@@ -236,10 +236,10 @@ export default function PianoVisualizer({
     bassSynth.connect(reverbRef.current);
 
     // Set max polyphony
-    mainSynth.maxPolyphony = 24;
-    hammerSynth.maxPolyphony = 24;
-    harmonicSynth.maxPolyphony = 24;
-    bassSynth.maxPolyphony = 16;
+    mainSynth.maxPolyphony = 64;
+    hammerSynth.maxPolyphony = 32;
+    harmonicSynth.maxPolyphony = 32;
+    bassSynth.maxPolyphony = 24;
 
     // Store all synths with custom trigger method
     pianoRef.current = {
