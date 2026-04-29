@@ -861,21 +861,23 @@ export default function PianoVisualizer({
   
   return (
     <div style={{
-      minHeight: '100vh',
+      height: '100vh',
+      overflow: 'hidden',
       background: 'linear-gradient(180deg, #0a0908 0%, #1a1614 50%, #0a0908 100%)',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      padding: '24px',
+      padding: '16px 24px',
       fontFamily: '"Cormorant Garamond", Georgia, serif',
-      color: '#e8e0d8'
+      color: '#e8e0d8',
+      boxSizing: 'border-box',
     }}>
       {/* MIDI Selection Dropdown */}
       {!midiData && (
         <div style={{
           width: '100%',
           maxWidth: '1200px',
-          marginBottom: '24px',
+          marginBottom: '12px',
           display: 'flex',
           justifyContent: 'center',
           padding: '0 16px'
@@ -941,7 +943,7 @@ export default function PianoVisualizer({
       )}
 
       {/* Title */}
-      <div style={{ textAlign: 'center', marginBottom: '16px', padding: '0 16px' }}>
+      <div style={{ textAlign: 'center', marginBottom: '8px', padding: '0 16px' }}>
         <h1 style={{
           fontSize: `clamp(1.2rem, ${Math.min(2, Math.max(1.2, 35 / (title || currentMidi.title || 'PIANO PLAYER').length))}rem, 2rem)`,
           fontWeight: 300,
@@ -972,7 +974,8 @@ export default function PianoVisualizer({
       <div style={{
         width: '100%',
         maxWidth: '1200px',
-        aspectRatio: '16/10',
+        flex: 1,
+        minHeight: 0,
         borderRadius: '8px',
         overflow: 'hidden',
         boxShadow: '0 20px 60px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(212, 168, 85, 0.2)',
@@ -990,10 +993,10 @@ export default function PianoVisualizer({
       <div style={{
         width: '100%',
         maxWidth: '1200px',
-        marginTop: '16px',
+        marginTop: '8px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '12px'
+        gap: '8px'
       }}>
         {/* Progress bar */}
         <div
