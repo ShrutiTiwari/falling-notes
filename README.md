@@ -1,10 +1,12 @@
+
 # Falling Notes 🎹
 
 Interactive piano roll visualizer — watch notes fall as the music plays.
 
 🎵 [Live Demo](https://falling-notes.vercel.app)
 
-<video src="assets/piano_visualizer.mp4" controls autoplay loop muted width="100%"></video>
+
+https://github.com/user-attachments/assets/8b3f418c-235a-4700-ba97-7dbae7cb088c
 
 ---
 
