@@ -14,12 +14,13 @@ export const liftMeUpMidiData: MidiData = {
   tempo: 88,
   timeSignature: "4/4",
   notes: [
-    [74, 0, 2045, 50, 0],
-    [55, 0, 341, 50, 1],
-    [59, 341, 341, 50, 1],
-    [62, 682, 341, 50, 1],
-    [64, 1023, 341, 50, 1],
-    [62, 1364, 1364, 50, 1],
+    // Bar 1 — G Major (I), p
+    [71, 0, 2045, 50, 0],      // B4 dotted half, beats 1-3, right hand
+    [43, 0, 682, 50, 1],       // G2 quarter, beat 1, left hand
+    [50, 682, 341, 50, 1],     // D3 eighth, beat 2, left hand
+    [52, 1023, 341, 50, 1],    // E3 eighth, beat 2.5, left hand
+    [55, 1364, 682, 50, 1],    // G3 quarter, beat 3, left hand
+    [57, 2045, 682, 50, 1],    // A3 quarter, beat 4, left hand
     [76, 2727, 682, 50, 0],
     [60, 2727, 341, 50, 1],
     [64, 3068, 341, 50, 1],
