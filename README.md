@@ -50,14 +50,13 @@ to generate the note sequence data for each piece in a consistent
 JSON format that the visualizer could consume directly. Getting 
 the timing representation right — especially for Hindustani 
 compositions where rhythm structures differ from Western notation 
-— required significant prompt iteration.
+— required prompt iteration.
 
 **Musical representation problem:** Western pieces could be 
 described in standard notation terms. For Hindustani ragas I had 
 to design a different input vocabulary — sargam notation (Sa Re 
 Ga Ma Pa Dha Ni) mapped to MIDI note numbers — and prompt Claude 
-to reason about that mapping correctly. This was the most 
-technically interesting AI challenge in the project.
+to reason about that mapping correctly. 
 
 **What I learned about AI-assisted development:** Claude is
 reliable for generating repetitive structured data (note
